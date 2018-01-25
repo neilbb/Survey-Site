@@ -12,7 +12,7 @@ var questionaire = questionaire || {};
 questionaire.handleSubmitButton = function() {
 	document.getElementById("Next").onclick = function() {
 
-		window.alert("Results");
+		//window.alert("Results");
 		var answers = [
 		$('#q1').slider("option", "value"),
 		$('#q2').slider("option", "value"),
