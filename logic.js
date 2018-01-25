@@ -7,10 +7,10 @@
 * Global variables
 */
 
-var questionaire = questionaire || {};
 
-questionaire.handleSubmitButton = function() {
-	document.getElementById("Next").onclick = function() {
+
+function handleSubmitButton() {
+	
 
 		//window.alert("Results");
 		var answers = [
@@ -36,7 +36,7 @@ questionaire.handleSubmitButton = function() {
 		window.alert(answers);
 		window.location.href="idaq.html";
 	}
-};
+
 /**
 * An init function that calls the methods above to handle on clicks for submit button.
 */
@@ -89,11 +89,5 @@ function handleSubmitButton2() {
 	];
 	window.alert(answers);
 	/**window.location.href="idaq.html";*/
-};
+}
 
-questionaire.init = function() {
-	this.handleSubmitButton();
-};
-
-// Initialize
-questionaire.init();
